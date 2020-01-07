@@ -198,7 +198,6 @@ if (false) {
     window.boot();
 }
 else if (window.jsb) {
-
     var isRuntime = (typeof loadRuntime === 'function');
     if (isRuntime) {
         require('src/settings.js');
@@ -210,7 +209,5 @@ else if (window.jsb) {
         require('src/cocos2d-jsb.js');
         require('jsb-adapter/jsb-engine.js');
     }
-
-    cc.macro.CLEANUP_IMAGE_CACHE = true;
     window.boot();
 }
